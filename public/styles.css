@@ -1,0 +1,199 @@
+html {
+    background: url("./primer\ fondo.jpg") no-repeat center center fixed; 
+    background-size: cover;
+}
+
+.title {
+    border: 3px solid;
+    font-family: cursive;
+    text-align: center;
+    color:rgba(131, 133, 129, 0.711);
+    width: 270px;
+    height: 50px;
+    background-color: rgb(23, 246, 179);
+    border-radius: 35px;
+    box-shadow: 9px 14px grey;
+}
+
+
+#selecionar_mascota {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tarjeta{
+    display: flex;
+}
+.tarjetaDeMokepon{
+    font-family: cursive;
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 249, 164);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+.tarjetaDeMokepon img {
+    width: 50px;
+}
+
+.eligeTuMascota{
+    font-family: cursive;
+}
+
+#seleccion{
+    font-family: cursive;
+    background: rgb(33, 246, 115);
+    border: 3px solid;
+    border-radius: 15px;
+
+}
+
+input{
+     display:none ; 
+}
+input:checked +label{
+    background-color: rgb(9, 250, 9);
+}
+
+#seleccionar_ataque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.title2{
+    border: 3px solid;
+    font-family: cursive;
+    text-align: center;
+    color:rgba(131, 133, 129, 0.711);
+    width: 270px;
+    height: 50px;
+    background-color: rgb(23, 246, 179);
+    border-radius: 35px;
+    box-shadow: 9px 14px grey;
+
+}
+.subtitle{
+    font-family: cursive;
+}
+.ataquesJugadas{
+    display: flex;
+}
+.ataques{
+    font-family: cursive;
+    width: 100px;
+    height: 100px;
+    background: rgb(89, 249, 164);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 3px solid;
+    border-radius: 15px;
+    text-align: center;
+}
+#mensaje{
+    font-family: cursive;
+    background: rgb(33, 246, 115);
+    border: 3px solid;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    padding-inline: 10px;
+    margin: 10px;
+    text-align: center;
+    
+
+}
+
+#reinicio{
+    font-family: cursive;
+    background: rgb(33, 246, 115);
+    border: 3px solid;
+    border-radius: 15px;
+
+}
+.putazos{
+    display: grid;
+    grid-template-columns: 100px 100px;
+}
+.columnaJugador{
+    background: rgb(33, 246, 115);
+    border: 3px solid;
+    padding-inline: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-family: cursive;
+    width: 70px;
+}
+.columnaEnemigo{
+
+    background: rgb(33, 246, 115);
+    border: 3px solid;
+    padding-inline: 10px;
+    margin: 10px;
+    border-radius: 15px;
+    font-family: cursive;
+    width: 70px;
+
+}
+@media(max-width:360px){
+    .tarjeta{
+        flex-direction: column;
+    }
+    .ataquesJugadas{
+        flex-direction: column;
+    }
+}
+.ataques:hover{
+    background-color: aqua;
+}
+
+#mapaDeCanava  {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botonesVerticales button {
+    flex-direction: column;
+    margin: 10px;
+    font-family: cursive;
+    width: 100px;
+    height: 40px;
+    background: rgb(89, 249, 164);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+    
+
+}
+.botonesHorizontales button {
+    flex-direction: row;
+    margin: 10px;
+    font-family: cursive;
+    width: 100px;
+    height: 40px;
+    background: rgb(89, 249, 164);
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    text-align: center;
+    
+}
+
+#reinicio:hover{
+    background-color: aqua;
+}

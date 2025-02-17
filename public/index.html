@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8"/>
+        <title> ELEMENT </title>
+        <link rel="stylesheet" href="./styles.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    </head>
+    <body>
+        <section id="selecionar_mascota">
+            <h1 class="title"> ELEMENT </h1>
+
+            <h2 class="eligeTuMascota"> elige a tu mascota:</h2>
+
+            <div id="contenedorTarjetas" class="tarjeta">
+                    
+            </div>
+
+             <button id="seleccion"> seleccionar</button>
+        </section>
+        
+        <section id = "mapaDeCanava">
+            <h1 class="title"> recorre el mapa </h1>
+
+            <canvas id="mapa"></canvas>
+        
+        <section id = "botonesDeMovimiento">
+            <div class = "botonesHorizontales">
+                <button  
+                onmouseup="detenerMovimiento ()"
+                onmousedown="botonDerrecha ()"
+                ontouchend="detenerMovimiento ()"
+                ontouchstart="botonDerrecha ()">derecha
+            </button> 
+                <button 
+                onmouseup="detenerMovimiento ()"
+                onmousedown="botonIzquierda ()"
+                ontouchend="detenerMovimiento ()"
+                ontouchstart="botonIzquierda ()">izquierda
+            </button>
+            </div>
+            <div class = "botonesVerticales">
+                <button  
+                onmouseup="detenerMovimiento ()" 
+                onmousedown="botonArriba ()"
+                ontouchend="detenerMovimiento ()" 
+                ontouchstart="botonArriba ()">arriba
+            </button> 
+                <button  
+                onmouseup="detenerMovimiento ()" 
+                onmousedown=" botonAbajo ()"
+                ontouchend="detenerMovimiento ()" 
+                ontouchstart=" botonAbajo ()">abajo
+            </button>
+            </div>
+           
+        </section>
+
+        </section>
+
+        <section id="seleccionar_ataque">
+            <h1 class="title2"> ELEMENT </h1>
+
+            <h2 class="subtitle"> elige tu ataque </h2>
+
+            <div id="contenedorAtaques" class="ataquesJugadas">
+               
+            </div>
+
+            
+            <div id="mensaje">
+                <p id="resultado">suerte, feo</p>
+
+                <section id="reiniciar">
+                    <button id="reinicio">reiniciar</button>
+                </section>
+            </div> 
+
+        
+        
+         <div class="putazos">
+                <div class="columnaJugador">
+                    <p id = "vidasJugador" >0</p>
+                    <p id="nombreMascotaJugador"></p>
+                    <div id="ataqueDelJugador"></div>
+                </div>
+
+                <div class="columnaEnemigo">
+                    <p id = "vidasEnemigo" >0</p>
+                    <p id="nombreMascotaEnemigo"></p>
+                    <div id="ataqueDelEnemigo"></div>
+                </div>
+          </div>
+        </section>  
+        <script src="./js/element.js"> </script>
+    </body>
+</html> 
